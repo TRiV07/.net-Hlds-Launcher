@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mw_dgsl_AutoRestart" xml:space="preserve">
+    <value>Auto restart</value>
+  </data>
+  <data name="mw_dgsl_ServerName" xml:space="preserve">
+    <value>Server name</value>
+  </data>
+  <data name="mw_dgsl_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="mw_StartSelectedServer" xml:space="preserve">
+    <value>Start selected</value>
+  </data>
+  <data name="mw_StopSelectedServer" xml:space="preserve">
+    <value>Stop selected</value>
+  </data>
+  <data name="mw_dgsl_CurrentMap" xml:space="preserve">
+    <value>Curent map</value>
+  </data>
+  <data name="mw_dgsl_Players" xml:space="preserve">
+    <value>Players</value>
+  </data>
+  <data name="mw_lbl_IntervalBetweenStarts" xml:space="preserve">
+    <value>Interval between starts (in seconds):</value>
+  </data>
+  <data name="mw_tcsl_MainLog" xml:space="preserve">
+    <value>Main log</value>
+  </data>
+  <data name="mw_cm_StartServer" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="mw_cm_StopServer" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="mw_dgsl_Fps" xml:space="preserve">
+    <value>Fps</value>
+  </data>
+  <data name="mw_gb_Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="mw_mb_ExitConfirmation" xml:space="preserve">
+    <value>Are you realy want to exit?</value>
+  </data>
+  <data name="mw_mb_ExitConfirmationTitle" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="mw_CancelOperation" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="mw_cm_Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="mw_gb_TimerInterval" xml:space="preserve">
+    <value>Timer interval</value>
+  </data>
+  <data name="mw_StartAllServers" xml:space="preserve">
+    <value>Start all</value>
+  </data>
+  <data name="mw_StopAllServers" xml:space="preserve">
+    <value>Stop all</value>
+  </data>
+  <data name="mw_TimerIntervalActual" xml:space="preserve">
+    <value>Actual:</value>
+  </data>
+  <data name="mw_TimerIntervalMax" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="mw_TimerIntervalMin" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="mw_TimerIntervalRefreshTimer" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="mw_TimerIntervalSetTimer" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="mw_SendConsoleCommand" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="aes_ActiveServer" xml:space="preserve">
+    <value>Active server</value>
+  </data>
+  <data name="aes_AditionalArgs" xml:space="preserve">
+    <value>Aditional arguments:</value>
+  </data>
+  <data name="aes_AllProcessors" xml:space="preserve">
+    <value>All processors</value>
+  </data>
+  <data name="aes_AutoRestart" xml:space="preserve">
+    <value>Auto server restart on crash</value>
+  </data>
+  <data name="aes_Browse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="aes_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="aes_ConsoleTypeIntegrated" xml:space="preserve">
+    <value>Integrated</value>
+  </data>
+  <data name="aes_ConsoleTypeNative" xml:space="preserve">
+    <value>Native</value>
+  </data>
+  <data name="aes_Game" xml:space="preserve">
+    <value>Game:</value>
+  </data>
+  <data name="aes_GoldSourceServer" xml:space="preserve">
+    <value>GoldSource server</value>
+  </data>
+  <data name="aes_HltvServer" xml:space="preserve">
+    <value>Htlv server</value>
+  </data>
+  <data name="aes_HostName" xml:space="preserve">
+    <value>Server name:</value>
+  </data>
+  <data name="aes_Map" xml:space="preserve">
+    <value>Map:</value>
+  </data>
+  <data name="aes_MaxPlayers" xml:space="preserve">
+    <value>Max players:</value>
+  </data>
+  <data name="aes_NoIpx" xml:space="preserve">
+    <value>noipx</value>
+  </data>
+  <data name="aes_NoMaster" xml:space="preserve">
+    <value>nomaster</value>
+  </data>
+  <data name="aes_PathToHlds" xml:space="preserve">
+    <value>Path to hlds.exe:</value>
+  </data>
+  <data name="aes_PathToHltv" xml:space="preserve">
+    <value>Path to hltv.exe:</value>
+  </data>
+  <data name="aes_PathToSrcds" xml:space="preserve">
+    <value>Path to srcds.exe:</value>
+  </data>
+  <data name="aes_Processor" xml:space="preserve">
+    <value>Processor {0}</value>
+  </data>
+  <data name="aes_ProcessorsCores" xml:space="preserve">
+    <value>Processors (cores):</value>
+  </data>
+  <data name="aes_Rcon" xml:space="preserve">
+    <value>Rcon password:</value>
+  </data>
+  <data name="aes_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="aes_ServerConsolePosition" xml:space="preserve">
+    <value>Console position:</value>
+  </data>
+  <data name="aes_ServerConsoleType" xml:space="preserve">
+    <value>Console type:</value>
+  </data>
+  <data name="aes_ServerIP" xml:space="preserve">
+    <value>Server IP:</value>
+  </data>
+  <data name="aes_ServerPort" xml:space="preserve">
+    <value>Server port:</value>
+  </data>
+  <data name="aes_ServerPriority" xml:space="preserve">
+    <value>Server priority:</value>
+  </data>
+  <data name="aes_ServerPriorityAboveNormal" xml:space="preserve">
+    <value>Above normal</value>
+  </data>
+  <data name="aes_ServerPriorityBelowNormal" xml:space="preserve">
+    <value>Below normal</value>
+  </data>
+  <data name="aes_ServerPriorityHigh" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="aes_ServerPriorityIdle" xml:space="preserve">
+    <value>Idle</value>
+  </data>
+  <data name="aes_ServerPriorityNormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="aes_ServerPriorityRealTime" xml:space="preserve">
+    <value>Real time</value>
+  </data>
+  <data name="aes_ServerProperties" xml:space="preserve">
+    <value>Server Properties</value>
+  </data>
+  <data name="aes_SourceServer" xml:space="preserve">
+    <value>Source server</value>
+  </data>
+  <data name="aes_SvLan" xml:space="preserve">
+    <value>sv__lan</value>
+  </data>
+  <data name="aes_SysTicrate" xml:space="preserve">
+    <value>sys__ticrate:</value>
+  </data>
+  <data name="aes_Vac" xml:space="preserve">
+    <value>VAC (Valve Anti Cheat)</value>
+  </data>
+  <data name="mw_cm_RemoveServer" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="mw_dgsl_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="mw_menu_AddGoldSourceServer" xml:space="preserve">
+    <value>Gold Source</value>
+  </data>
+  <data name="mw_menu_AddHltvServer" xml:space="preserve">
+    <value>Hltv</value>
+  </data>
+  <data name="mw_menu_AddServer" xml:space="preserve">
+    <value>Add server</value>
+  </data>
+  <data name="mw_menu_AddSourceServer" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="mw_menu_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="mw_menu_Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="mw_menu_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="mw_menu_RemoveServer" xml:space="preserve">
+    <value>Remove server</value>
+  </data>
+  <data name="mw_menu_ServerProperties" xml:space="preserve">
+    <value>Server properties</value>
+  </data>
+  <data name="log_ServerCrashed" xml:space="preserve">
+    <value>Server "{0}" crashed.\nConsole before crash:\n========================\n{1}\n========================\n</value>
+  </data>
+  <data name="log_ServerCrashedWithDialog" xml:space="preserve">
+    <value>Server "{0}" crashed.\nConsole before crash:\n========================\n{1}\n========================\nDialog box title: {2}\nDialog box message: {3}\n</value>
+  </data>
+  <data name="log_KillProcessShutdown" xml:space="preserve">
+    <value>Killing the process of server "{0}".</value>
+  </data>
+  <data name="log_NormalShutdownFailed" xml:space="preserve">
+    <value>Normal shutdown for server "{0}" failed.</value>
+  </data>
+  <data name="log_ProcessAlreadyKilled" xml:space="preserve">
+    <value>The process is already killed.</value>
+  </data>
+  <data name="log_ServerAlreadyStarted" xml:space="preserve">
+    <value>Server "{0}" is already started.</value>
+  </data>
+  <data name="log_ServerAlreadyStopped" xml:space="preserve">
+    <value>Server "{0}" is already stopped.</value>
+  </data>
+  <data name="log_StartFailedFileIsNotExists" xml:space="preserve">
+    <value>Start failed. File "{0}" is not exists.</value>
+  </data>
+  <data name="log_SuccessfulStarted" xml:space="preserve">
+    <value>Server "{0}" successful started.</value>
+  </data>
+  <data name="log_SuccessfulStopped" xml:space="preserve">
+    <value>Server "{0}" successful stopped.</value>
+  </data>
+  <data name="log_TryingNormalShutdown" xml:space="preserve">
+    <value>Trying normal shutdown for server "{0}".</value>
+  </data>
+  <data name="log_TryingToStart" xml:space="preserve">
+    <value>Trying to start server "{0}".</value>
+  </data>
+  <data name="log_UnableToSetAffinity" xml:space="preserve">
+    <value>Unable to set affinity.</value>
+  </data>
+  <data name="log_UnableToSetPriority" xml:space="preserve">
+    <value>Unable to set priority.</value>
+  </data>
+  <data name="mw_mb_RemoveConfirmation" xml:space="preserve">
+    <value>Are you sure want to remove server "{0}"?</value>
+  </data>
+  <data name="mw_mb_RemoveConfirmationTitle" xml:space="preserve">
+    <value>Server remove</value>
+  </data>
+  <data name="mw_menu_ImportServers" xml:space="preserve">
+    <value>Import servers</value>
+  </data>
+  <data name="mw_OldHldslOptionsFile" xml:space="preserve">
+    <value>Old Hlds Launcher options</value>
+  </data>
+  <data name="mw_ServerImported" xml:space="preserve">
+    <value>Import server "{0}" successful.</value>
+  </data>
+  <data name="mw_AllPlayersCount" xml:space="preserve">
+    <value>All players: {0}/{1}</value>
+  </data>
+  <data name="br_Close" xml:space="preserve">
+    <value>Exit program</value>
+  </data>
+  <data name="br_Continue" xml:space="preserve">
+    <value>Continue working (not recommended)</value>
+  </data>
+  <data name="br_mb_Fail" xml:space="preserve">
+    <value>Bug report sending failed.</value>
+  </data>
+  <data name="br_mb_FailTitle" xml:space="preserve">
+    <value>Send failed</value>
+  </data>
+  <data name="br_mb_Successful" xml:space="preserve">
+    <value>Bug report successful sended.</value>
+  </data>
+  <data name="br_mb_SuccessfulTitle" xml:space="preserve">
+    <value>Send successful</value>
+  </data>
+  <data name="br_Restart" xml:space="preserve">
+    <value>Restart program</value>
+  </data>
+  <data name="br_SendingReport" xml:space="preserve">
+    <value>Sending report...</value>
+  </data>
+  <data name="br_SendReport" xml:space="preserve">
+    <value>Send report</value>
+  </data>
+  <data name="br_WindowMessage" xml:space="preserve">
+    <value>Unfortunately the program has encountered a problem.</value>
+  </data>
+  <data name="br_WindowTitle" xml:space="preserve">
+    <value>Error detected</value>
+  </data>
+  <data name="aes_AddNewServerTitle" xml:space="preserve">
+    <value>Adding new server</value>
+  </data>
+  <data name="aes_EditServerTitle" xml:space="preserve">
+    <value>Editing server "{0}"</value>
+  </data>
+  <data name="do_AutoStartOptions" xml:space="preserve">
+    <value>Autostart options</value>
+  </data>
+  <data name="do_AutoStartServers" xml:space="preserve">
+    <value>Start active servers when program starts after</value>
+  </data>
+  <data name="do_AutoStartWithWindows" xml:space="preserve">
+    <value>Start program when Windows starts</value>
+  </data>
+  <data name="do_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="do_ErrorReporting" xml:space="preserve">
+    <value>Windows Error reporting</value>
+  </data>
+  <data name="do_ErrorReportingDisable" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="do_ErrorReportingEnable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="do_ErrorReportingStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="do_ErrorReportingStatusDisabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="do_ErrorReportingStatusEnabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="do_Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="do_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="do_Seconds" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="do_Title" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="mw_menu_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="mw_StatusWaitingForServersStart" xml:space="preserve">
+    <value>Waiting for servers start...</value>
+  </data>
+  <data name="mw_dgsl_CmdArguments" xml:space="preserve">
+    <value>Command line arguments</value>
+  </data>
+  <data name="do_MMTimerStartUpSet" xml:space="preserve">
+    <value>Set saved timer interval at startup</value>
+  </data>
+  <data name="do_ShowServerInfoInTabs" xml:space="preserve">
+    <value>Show server information in tab header</value>
+  </data>
+  <data name="do_ShowTabsOnlyIfServerStarted" xml:space="preserve">
+    <value>Show tab, only if server started</value>
+  </data>
+  <data name="log_StartupTimerSet" xml:space="preserve">
+    <value>Setting MM-timer from configuration value to {0}.</value>
+  </data>
+  <data name="log_TimerIntervalActual" xml:space="preserve">
+    <value>MM-timer current value: {0}.</value>
+  </data>
+  <data name="log_TimerIntervalMax" xml:space="preserve">
+    <value>MM-timer min value: {0}.</value>
+  </data>
+  <data name="log_TimerIntervalMin" xml:space="preserve">
+    <value>MM-timer max value: {0}.</value>
+  </data>
+  <data name="mw_upd_CheckingNewVersion" xml:space="preserve">
+    <value>Checking for a new version...</value>
+  </data>
+  <data name="mw_upd_FailCheckForUpdate" xml:space="preserve">
+    <value>Check for update failed. Click to recheck...</value>
+  </data>
+  <data name="mw_upd_NewVersionAvailable" xml:space="preserve">
+    <value>New ({0}) version is available. Click to download...</value>
+  </data>
+  <data name="mw_upd_NoNewVersionAvailable" xml:space="preserve">
+    <value>No updates available. Click to recheck...</value>
+  </data>
+  <data name="do_AutoStartMinimized" xml:space="preserve">
+    <value>Start minimized</value>
+  </data>
+  <data name="mw_ti_Text" xml:space="preserve">
+    <value>.net Hlds Launcher 2 - Double click to hide / show</value>
+  </data>
+  <data name="do_ChangeLanguageNeedRestart" xml:space="preserve">
+    <value>You have to restart program for the changes to take effect.</value>
+  </data>
+  <data name="app_CriticalError" xml:space="preserve">
+    <value>Critical Error. Send report to developer?</value>
+  </data>
+  <data name="aes_Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="app_mb_AlreadyStarted" xml:space="preserve">
+    <value>Application is already running</value>
+  </data>
+  <data name="app_mb_AlreadyStartedTitle" xml:space="preserve">
+    <value>Failed to start</value>
+  </data>
+  <data name="log_CrashCountMaxLimit" xml:space="preserve">
+    <value>Server "{0}" will not be restarted because it crashed {1} times for {2} seconds.</value>
+  </data>
+  <data name="log_ServerCrashedOnMap" xml:space="preserve">
+    <value>Server "{0}" crashed on map {1}.\nConsole before crash:\n========================\n{2}\n========================\n</value>
+  </data>
+  <data name="log_ServerCrashedWithDialogOnMap" xml:space="preserve">
+    <value>Server "{0}" crashed on map {1}.\nConsole before crash:\n========================\n{2}\n========================\nDialog box title: {3}\nDialog box message: {4}\n</value>
+  </data>
+  <data name="log_UnableToCreateHook" xml:space="preserve">
+    <value>Unable to create hook.</value>
+  </data>
+  <data name="log_UnableToWaitForInputIdle" xml:space="preserve">
+    <value>Unable to wait for Input Idle.</value>
+  </data>
+  <data name="mw_dgsl_Crashes" xml:space="preserve">
+    <value>Crashes</value>
+  </data>
+  <data name="aes_CrashLimit" xml:space="preserve">
+    <value>Do not restart server, if it crashed</value>
+  </data>
+  <data name="aes_CrashLimit2" xml:space="preserve">
+    <value>time(s) in</value>
+  </data>
+  <data name="aes_CrashLimit3" xml:space="preserve">
+    <value>seconds.</value>
+  </data>
+  <data name="mb_NotEnoughRights" xml:space="preserve">
+    <value>You are not allowed to access the registry</value>
+  </data>
+  <data name="mb_NotEnoughRightsTitle" xml:space="preserve">
+    <value>Not enough rights</value>
+  </data>
+</root>

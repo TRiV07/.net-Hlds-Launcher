@@ -1,0 +1,16 @@
+﻿<Window x:Class="HldsLauncher.BugReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:res="clr-namespace:HldsLauncher.Properties"
+        xmlns:extToolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+        Title="{x:Static res:Resources.br_WindowTitle}" Height="200" Width="400"
+        WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" Closing="Window_Closing">
+    <Grid>
+        <TextBlock Height="23" HorizontalAlignment="Center" Margin="0,12,0,0" Name="textBlockErrorDetected" Text="{x:Static res:Resources.br_WindowMessage}" VerticalAlignment="Top" FontSize="13" />
+        <Button Content="{x:Static res:Resources.br_SendReport}" Height="23" HorizontalAlignment="Center" Margin="0,41,0,0" Name="buttonSendReport" VerticalAlignment="Top" Click="buttonSendReport_Click" />
+        <Button Content="{x:Static res:Resources.br_Restart}" Height="23" HorizontalAlignment="Center" Margin="0,70,0,0" Name="buttonRestart" VerticalAlignment="Top" Click="buttonRestart_Click" />
+        <Button Content="{x:Static res:Resources.br_Continue}" Height="23" HorizontalAlignment="Center" Margin="0,99,0,0" Name="buttonContinue" VerticalAlignment="Top" Click="buttonContinue_Click" />
+        <Button Content="{x:Static res:Resources.br_Close}" Height="23" HorizontalAlignment="Center" Margin="0,128,0,0" Name="buttonClose" VerticalAlignment="Top" Click="buttonClose_Click" />
+        <extToolkit:BusyIndicator Name="busyIndicator" BusyContent="{x:Static res:Resources.br_SendingReport}" />
+    </Grid>
+</Window>

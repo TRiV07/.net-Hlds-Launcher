@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mw_dgsl_AutoRestart" xml:space="preserve">
+    <value>Авто перезапуск</value>
+  </data>
+  <data name="mw_dgsl_ServerName" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="mw_dgsl_Status" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="mw_StartSelectedServer" xml:space="preserve">
+    <value>Запуск выбранного</value>
+  </data>
+  <data name="mw_StopSelectedServer" xml:space="preserve">
+    <value>Остановка выбранного</value>
+  </data>
+  <data name="mw_dgsl_CurrentMap" xml:space="preserve">
+    <value>Текущая карта</value>
+  </data>
+  <data name="mw_dgsl_Players" xml:space="preserve">
+    <value>Игроки</value>
+  </data>
+  <data name="mw_lbl_IntervalBetweenStarts" xml:space="preserve">
+    <value>Интервал между запусками (в секундах):</value>
+  </data>
+  <data name="mw_tcsl_MainLog" xml:space="preserve">
+    <value>Основной лог</value>
+  </data>
+  <data name="mw_cm_StartServer" xml:space="preserve">
+    <value>Запуск</value>
+  </data>
+  <data name="mw_cm_StopServer" xml:space="preserve">
+    <value>Остановка</value>
+  </data>
+  <data name="mw_dgsl_Fps" xml:space="preserve">
+    <value>Fps</value>
+  </data>
+  <data name="mw_gb_Actions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="mw_mb_ExitConfirmation" xml:space="preserve">
+    <value>Вы действительно хотите выйти?</value>
+  </data>
+  <data name="mw_mb_ExitConfirmationTitle" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="mw_CancelOperation" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="mw_cm_Properties" xml:space="preserve">
+    <value>Свойства</value>
+  </data>
+  <data name="mw_gb_TimerInterval" xml:space="preserve">
+    <value>Интервал таймера</value>
+  </data>
+  <data name="mw_StartAllServers" xml:space="preserve">
+    <value>Запустить все</value>
+  </data>
+  <data name="mw_StopAllServers" xml:space="preserve">
+    <value>Остановить все</value>
+  </data>
+  <data name="mw_TimerIntervalActual" xml:space="preserve">
+    <value>Текущий:</value>
+  </data>
+  <data name="mw_TimerIntervalMax" xml:space="preserve">
+    <value>Макс:</value>
+  </data>
+  <data name="mw_TimerIntervalMin" xml:space="preserve">
+    <value>Мин:</value>
+  </data>
+  <data name="mw_TimerIntervalRefreshTimer" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="mw_TimerIntervalSetTimer" xml:space="preserve">
+    <value>Установить</value>
+  </data>
+  <data name="mw_SendConsoleCommand" xml:space="preserve">
+    <value>Выполнить</value>
+  </data>
+  <data name="aes_ActiveServer" xml:space="preserve">
+    <value>Активный сервер</value>
+  </data>
+  <data name="aes_AditionalArgs" xml:space="preserve">
+    <value>Дополнительные аргументы:</value>
+  </data>
+  <data name="aes_AllProcessors" xml:space="preserve">
+    <value>Все процессоры</value>
+  </data>
+  <data name="aes_AutoRestart" xml:space="preserve">
+    <value>Перезапуск сервера при падении</value>
+  </data>
+  <data name="aes_Browse" xml:space="preserve">
+    <value>Обзор</value>
+  </data>
+  <data name="aes_Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="aes_ConsoleTypeIntegrated" xml:space="preserve">
+    <value>Интегрированная</value>
+  </data>
+  <data name="aes_ConsoleTypeNative" xml:space="preserve">
+    <value>Обычная</value>
+  </data>
+  <data name="aes_Game" xml:space="preserve">
+    <value>Игра:</value>
+  </data>
+  <data name="aes_GoldSourceServer" xml:space="preserve">
+    <value>GoldSource сервер</value>
+  </data>
+  <data name="aes_HltvServer" xml:space="preserve">
+    <value>Hltv сервер</value>
+  </data>
+  <data name="aes_HostName" xml:space="preserve">
+    <value>Имя сервера:</value>
+  </data>
+  <data name="aes_Map" xml:space="preserve">
+    <value>Карта:</value>
+  </data>
+  <data name="aes_MaxPlayers" xml:space="preserve">
+    <value>Макс игроков:</value>
+  </data>
+  <data name="aes_NoIpx" xml:space="preserve">
+    <value>noipx</value>
+  </data>
+  <data name="aes_NoMaster" xml:space="preserve">
+    <value>nomaster</value>
+  </data>
+  <data name="aes_PathToHlds" xml:space="preserve">
+    <value>Путь к hlds.exe:</value>
+  </data>
+  <data name="aes_PathToHltv" xml:space="preserve">
+    <value>Путь к hltv.exe:</value>
+  </data>
+  <data name="aes_PathToSrcds" xml:space="preserve">
+    <value>Путь к srcds.exe:</value>
+  </data>
+  <data name="aes_Processor" xml:space="preserve">
+    <value>Процессор {0}</value>
+  </data>
+  <data name="aes_ProcessorsCores" xml:space="preserve">
+    <value>Процессоры (ядра):</value>
+  </data>
+  <data name="aes_Rcon" xml:space="preserve">
+    <value>Rcon пароль:</value>
+  </data>
+  <data name="aes_Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="aes_ServerConsolePosition" xml:space="preserve">
+    <value>Положение консоли:</value>
+  </data>
+  <data name="aes_ServerConsoleType" xml:space="preserve">
+    <value>Тип консоли:</value>
+  </data>
+  <data name="aes_ServerIP" xml:space="preserve">
+    <value>IP сервер:</value>
+  </data>
+  <data name="aes_ServerPort" xml:space="preserve">
+    <value>Порт сервера:</value>
+  </data>
+  <data name="aes_ServerPriority" xml:space="preserve">
+    <value>Приоритет сервера:</value>
+  </data>
+  <data name="aes_ServerPriorityAboveNormal" xml:space="preserve">
+    <value>Выше среднего</value>
+  </data>
+  <data name="aes_ServerPriorityBelowNormal" xml:space="preserve">
+    <value>Ниже среднего</value>
+  </data>
+  <data name="aes_ServerPriorityHigh" xml:space="preserve">
+    <value>Высокий</value>
+  </data>
+  <data name="aes_ServerPriorityIdle" xml:space="preserve">
+    <value>Низкий</value>
+  </data>
+  <data name="aes_ServerPriorityNormal" xml:space="preserve">
+    <value>Средний</value>
+  </data>
+  <data name="aes_ServerPriorityRealTime" xml:space="preserve">
+    <value>Реального времени</value>
+  </data>
+  <data name="aes_ServerProperties" xml:space="preserve">
+    <value>Свойства сервера</value>
+  </data>
+  <data name="aes_SourceServer" xml:space="preserve">
+    <value>Source сервер</value>
+  </data>
+  <data name="aes_SvLan" xml:space="preserve">
+    <value>sv__lan</value>
+  </data>
+  <data name="aes_SysTicrate" xml:space="preserve">
+    <value>sys__ticrate:</value>
+  </data>
+  <data name="aes_Vac" xml:space="preserve">
+    <value>VAC (Valve Anti Cheat)</value>
+  </data>
+  <data name="mw_cm_RemoveServer" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="mw_dgsl_Active" xml:space="preserve">
+    <value>Активный</value>
+  </data>
+  <data name="mw_menu_AddGoldSourceServer" xml:space="preserve">
+    <value>Gold Source</value>
+  </data>
+  <data name="mw_menu_AddHltvServer" xml:space="preserve">
+    <value>Hltv</value>
+  </data>
+  <data name="mw_menu_AddServer" xml:space="preserve">
+    <value>Добавление сервера</value>
+  </data>
+  <data name="mw_menu_AddSourceServer" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="mw_menu_Edit" xml:space="preserve">
+    <value>Правка</value>
+  </data>
+  <data name="mw_menu_Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="mw_menu_File" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="mw_menu_RemoveServer" xml:space="preserve">
+    <value>Удаление сервера</value>
+  </data>
+  <data name="mw_menu_ServerProperties" xml:space="preserve">
+    <value>Свойства сервера</value>
+  </data>
+  <data name="log_ServerCrashed" xml:space="preserve">
+    <value>Сервер "{0}" упал. \nКонсоль до падения: \n========================\n{1}\n========================\n</value>
+  </data>
+  <data name="log_ServerCrashedWithDialog" xml:space="preserve">
+    <value>Сервер "{0}" упал. \nКонсоль до падения:\n========================\n{1}\n========================\nЗаголовок окна с ошибкой: {2}\nТекст ошибки: {3}\n</value>
+  </data>
+  <data name="log_KillProcessShutdown" xml:space="preserve">
+    <value>Завершение процесса сервера "{0}".</value>
+  </data>
+  <data name="log_NormalShutdownFailed" xml:space="preserve">
+    <value>Не удалось нормально закрыть сервер "{0}".</value>
+  </data>
+  <data name="log_ProcessAlreadyKilled" xml:space="preserve">
+    <value>Этот процесс уже завершен.</value>
+  </data>
+  <data name="log_ServerAlreadyStarted" xml:space="preserve">
+    <value>Сервер "{0}" уже запущен.</value>
+  </data>
+  <data name="log_ServerAlreadyStopped" xml:space="preserve">
+    <value>Сервер "{0}" уже остановлен.</value>
+  </data>
+  <data name="log_StartFailedFileIsNotExists" xml:space="preserve">
+    <value>Неудачный запуск. Файл "{0}" не существует.</value>
+  </data>
+  <data name="log_SuccessfulStarted" xml:space="preserve">
+    <value>Сервер "{0}" успешно запущен.</value>
+  </data>
+  <data name="log_SuccessfulStopped" xml:space="preserve">
+    <value>Сервер "{0}" успешно остановлен.</value>
+  </data>
+  <data name="log_TryingNormalShutdown" xml:space="preserve">
+    <value>Попытка нормально закрыть сервер "{0}".</value>
+  </data>
+  <data name="log_TryingToStart" xml:space="preserve">
+    <value>Попытка запустить сервер "{0}".</value>
+  </data>
+  <data name="log_UnableToSetAffinity" xml:space="preserve">
+    <value>Не удается установить привязку к ядрам.</value>
+  </data>
+  <data name="log_UnableToSetPriority" xml:space="preserve">
+    <value>Не удается задать приоритет.</value>
+  </data>
+  <data name="mw_mb_RemoveConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить сервер "{0}"?</value>
+  </data>
+  <data name="mw_mb_RemoveConfirmationTitle" xml:space="preserve">
+    <value>Удаление сервера</value>
+  </data>
+  <data name="mw_menu_ImportServers" xml:space="preserve">
+    <value>Импорт серверов</value>
+  </data>
+  <data name="mw_OldHldslOptionsFile" xml:space="preserve">
+    <value>Опции старого Hldsl</value>
+  </data>
+  <data name="mw_ServerImported" xml:space="preserve">
+    <value>Сервер "{0}" успешно импортирован.</value>
+  </data>
+  <data name="mw_AllPlayersCount" xml:space="preserve">
+    <value>Все игроки: {0}/{1}</value>
+  </data>
+  <data name="br_Close" xml:space="preserve">
+    <value>Выход из программы</value>
+  </data>
+  <data name="br_Continue" xml:space="preserve">
+    <value>Продолжить работу (не рекомендуется)</value>
+  </data>
+  <data name="br_mb_Fail" xml:space="preserve">
+    <value>Не удалось отправить отчет об ошибке.</value>
+  </data>
+  <data name="br_mb_FailTitle" xml:space="preserve">
+    <value>Отправка не удалась</value>
+  </data>
+  <data name="br_mb_Successful" xml:space="preserve">
+    <value>Отчет об ошибке успешно отправлен</value>
+  </data>
+  <data name="br_mb_SuccessfulTitle" xml:space="preserve">
+    <value>Успешная отправка</value>
+  </data>
+  <data name="br_Restart" xml:space="preserve">
+    <value>Перезапустить программу</value>
+  </data>
+  <data name="br_SendingReport" xml:space="preserve">
+    <value>Отправка отчета...</value>
+  </data>
+  <data name="br_SendReport" xml:space="preserve">
+    <value>Отправить отчет</value>
+  </data>
+  <data name="br_WindowMessage" xml:space="preserve">
+    <value>К сожалению в программе обнаружена проблема.</value>
+  </data>
+  <data name="br_WindowTitle" xml:space="preserve">
+    <value>Обнаружена ошибка</value>
+  </data>
+  <data name="aes_AddNewServerTitle" xml:space="preserve">
+    <value>Добавление нового сервера</value>
+  </data>
+  <data name="aes_EditServerTitle" xml:space="preserve">
+    <value>Редактирование сервера "{0}"</value>
+  </data>
+  <data name="do_AutoStartOptions" xml:space="preserve">
+    <value>Параметры автозапуска</value>
+  </data>
+  <data name="do_AutoStartServers" xml:space="preserve">
+    <value>Запустить активные серверы после запуска через</value>
+  </data>
+  <data name="do_AutoStartWithWindows" xml:space="preserve">
+    <value>Запуск с Windows</value>
+  </data>
+  <data name="do_Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="do_ErrorReporting" xml:space="preserve">
+    <value>Отчет об ошибках Windows</value>
+  </data>
+  <data name="do_ErrorReportingDisable" xml:space="preserve">
+    <value>Отключить</value>
+  </data>
+  <data name="do_ErrorReportingEnable" xml:space="preserve">
+    <value>Включить</value>
+  </data>
+  <data name="do_ErrorReportingStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="do_ErrorReportingStatusDisabled" xml:space="preserve">
+    <value>Отключено</value>
+  </data>
+  <data name="do_ErrorReportingStatusEnabled" xml:space="preserve">
+    <value>Включено</value>
+  </data>
+  <data name="do_Language" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="do_Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="do_Seconds" xml:space="preserve">
+    <value>секунд</value>
+  </data>
+  <data name="do_Title" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="mw_menu_Options" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="mw_StatusWaitingForServersStart" xml:space="preserve">
+    <value>Ожидание запуска серверов...</value>
+  </data>
+  <data name="mw_dgsl_CmdArguments" xml:space="preserve">
+    <value>Аргументы командной строки</value>
+  </data>
+  <data name="do_MMTimerStartUpSet" xml:space="preserve">
+    <value>Устанавливать интервал таймера при запуске</value>
+  </data>
+  <data name="do_ShowServerInfoInTabs" xml:space="preserve">
+    <value>Показать сведения о сервере в заголовках вкладок</value>
+  </data>
+  <data name="do_ShowTabsOnlyIfServerStarted" xml:space="preserve">
+    <value>Показывать вкладку, только если сервер запущен</value>
+  </data>
+  <data name="log_StartupTimerSet" xml:space="preserve">
+    <value>Значение MM-таймера установлено в {0}.</value>
+  </data>
+  <data name="log_TimerIntervalActual" xml:space="preserve">
+    <value>Текущее значение MM-таймера: {0}.</value>
+  </data>
+  <data name="log_TimerIntervalMax" xml:space="preserve">
+    <value>Минимальное значение MM-таймера: {0}.</value>
+  </data>
+  <data name="log_TimerIntervalMin" xml:space="preserve">
+    <value>Максимальное значение MM-таймера: {0}.</value>
+  </data>
+  <data name="mw_upd_CheckingNewVersion" xml:space="preserve">
+    <value>Проверка наличия новой версии...</value>
+  </data>
+  <data name="mw_upd_FailCheckForUpdate" xml:space="preserve">
+    <value>Не удалось проверить обновление. Щелкните, чтобы перепроверить...</value>
+  </data>
+  <data name="mw_upd_NewVersionAvailable" xml:space="preserve">
+    <value>Доступна новая версия ({0}). Нажмите, чтобы скачать...</value>
+  </data>
+  <data name="mw_upd_NoNewVersionAvailable" xml:space="preserve">
+    <value>Нет доступных обновлений. Щелкните, чтобы перепроверить...</value>
+  </data>
+  <data name="do_AutoStartMinimized" xml:space="preserve">
+    <value>Запуск в свернутом виде</value>
+  </data>
+  <data name="mw_ti_Text" xml:space="preserve">
+    <value>.net Hlds Launcher 2 - двойной клик, чтобы скрыть / показать</value>
+  </data>
+  <data name="do_ChangeLanguageNeedRestart" xml:space="preserve">
+    <value>Необходимо перезагрузить программу, чтобы изменения вступили в силу.</value>
+  </data>
+  <data name="app_CriticalError" xml:space="preserve">
+    <value>Критическая ошибка. Отправить отчет разработчику?</value>
+  </data>
+  <data name="aes_Loading" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="app_mb_AlreadyStarted" xml:space="preserve">
+    <value>Приложение уже запущено</value>
+  </data>
+  <data name="app_mb_AlreadyStartedTitle" xml:space="preserve">
+    <value>Ошибка запуска</value>
+  </data>
+  <data name="log_CrashCountMaxLimit" xml:space="preserve">
+    <value>Сервер "{0}" не будет перезагружен, так как он упал {1} раз в течении {2} секунд(ы).</value>
+  </data>
+  <data name="log_ServerCrashedOnMap" xml:space="preserve">
+    <value>Сервер "{0}" упал на карте {1}. \nКонсоль до падения: \n========================\n{2}\n========================\n</value>
+  </data>
+  <data name="log_ServerCrashedWithDialogOnMap" xml:space="preserve">
+    <value>Сервер "{0}" упал на карте {1}. \nКонсоль до падения:\n========================\n{2}\n========================\nЗаголовок окна с ошибкой: {3}\nТекст ошибки: {4}\n</value>
+  </data>
+  <data name="log_UnableToCreateHook" xml:space="preserve">
+    <value>Не удается повесить хук на процесс.</value>
+  </data>
+  <data name="log_UnableToWaitForInputIdle" xml:space="preserve">
+    <value>Не удается дождаться Input Idle.</value>
+  </data>
+  <data name="mw_dgsl_Crashes" xml:space="preserve">
+    <value>Падения</value>
+  </data>
+  <data name="aes_CrashLimit" xml:space="preserve">
+    <value>Не перезагружать сервер, если он упал</value>
+  </data>
+  <data name="aes_CrashLimit2" xml:space="preserve">
+    <value>раз(а) за</value>
+  </data>
+  <data name="aes_CrashLimit3" xml:space="preserve">
+    <value>секунд(ы)(у).</value>
+  </data>
+  <data name="mb_NotEnoughRights" xml:space="preserve">
+    <value>У вас недостаточно прав для доступа в системный реестр</value>
+  </data>
+  <data name="mb_NotEnoughRightsTitle" xml:space="preserve">
+    <value>Недостаточно прав</value>
+  </data>
+</root>

@@ -1,0 +1,126 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HldsLauncher-WPF-2", "HldsLauncher-WPF-2\HldsLauncher-WPF-2.csproj", "{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{C6FE3E93-CAE5-420C-8900-3F033D4617C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E954F622-D6B8-4F58-BBD0-C3FB687CE771}"
+	ProjectSection(SolutionItems) = preProject
+		HldsLauncher-WPF-2.vsmdi = HldsLauncher-WPF-2.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inject", "Inject\Inject.vcxproj", "{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ErrorsHook", "ErrorsHook\ErrorsHook.vcxproj", "{5AF6F495-362E-4C63-B056-D2FD268B999D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{6F9451C5-33E7-4C70-9148-9CDF1291AB6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NLog", "NLog", "{6B19319B-D5A7-48C8-A916-AFA9E0911F1A}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\NLog\NLog.Extended.dll = Lib\NLog\NLog.Extended.dll
+		Lib\NLog\NLog.Extended.xml = Lib\NLog\NLog.Extended.xml
+		Lib\NLog\NLog.dll = Lib\NLog\NLog.dll
+		Lib\NLog\NLog.xml = Lib\NLog\NLog.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.netfx40", "NLog\NLog.netfx40.csproj", "{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExtendedWPFToolkit", "ExtendedWPFToolkit", "{00F39AD2-6E9D-4E43-AE86-40836248F896}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\ExtendedWPFToolkit\WPFToolkit.Extended.dll = Lib\ExtendedWPFToolkit\WPFToolkit.Extended.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPFToolkit", "WPFToolkit", "{49988DAD-4EB0-4962-85C4-8779DE910EDA}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\WPFToolkit\System.Windows.Controls.Input.Toolkit.dll = Lib\WPFToolkit\System.Windows.Controls.Input.Toolkit.dll
+		Lib\WPFToolkit\WPFToolkit.dll = Lib\WPFToolkit\WPFToolkit.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = HldsLauncher-WPF-2.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Debug|Win32.Build.0 = Debug|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Debug|x86.ActiveCfg = Debug|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Release|Any CPU.ActiveCfg = Release|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Release|Win32.ActiveCfg = Release|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Release|Win32.Build.0 = Release|Win32
+		{5AF6F495-362E-4C63-B056-D2FD268B999D}.Release|x86.ActiveCfg = Release|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Debug|Win32.Build.0 = Debug|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Debug|x86.ActiveCfg = Debug|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Release|Win32.ActiveCfg = Release|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Release|Win32.Build.0 = Release|Win32
+		{9BAD7A7A-4CB9-4234-AEDA-9E1D3065E91F}.Release|x86.ActiveCfg = Release|Win32
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Release|Win32.ActiveCfg = Release|Any CPU
+		{A0BFF0DB-ED9A-4639-AE86-8E709A1EFC66}.Release|x86.ActiveCfg = Release|Any CPU
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Debug|Win32.ActiveCfg = Debug|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Debug|x86.ActiveCfg = Debug|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Debug|x86.Build.0 = Debug|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Release|Any CPU.ActiveCfg = Release|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Release|Win32.ActiveCfg = Release|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Release|x86.ActiveCfg = Release|x86
+		{B4CC8E5C-99C2-4D3E-A108-86F8BDA8788F}.Release|x86.Build.0 = Release|x86
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Release|Win32.ActiveCfg = Release|Any CPU
+		{C6FE3E93-CAE5-420C-8900-3F033D4617C6}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00F39AD2-6E9D-4E43-AE86-40836248F896} = {6F9451C5-33E7-4C70-9148-9CDF1291AB6D}
+		{49988DAD-4EB0-4962-85C4-8779DE910EDA} = {6F9451C5-33E7-4C70-9148-9CDF1291AB6D}
+		{6B19319B-D5A7-48C8-A916-AFA9E0911F1A} = {6F9451C5-33E7-4C70-9148-9CDF1291AB6D}
+	EndGlobalSection
+EndGlobal

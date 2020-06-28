@@ -1,0 +1,153 @@
+﻿<Window x:Class="HldsLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:c="clr-namespace:HldsLauncher"
+        xmlns:toolkit="http://schemas.microsoft.com/wpf/2008/toolkit"
+        xmlns:toolkitInput="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"
+        xmlns:extToolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended"
+        xmlns:res="clr-namespace:HldsLauncher.Properties"
+        xmlns:converters="clr-namespace:HldsLauncher.Converters"
+        Height="600" Width="930"
+        MinHeight="480" MinWidth="640"
+        Closing="Window_Closing" StateChanged="Window_StateChanged"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <converters:MethodToValueConverter x:Key="MethodToValueConverterRes" />
+    </Window.Resources>
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo x:Name="taskBarItemInfoHlds">
+        </TaskbarItemInfo>
+    </Window.TaskbarItemInfo>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="23" />
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Name="menuItemFile" Header="{x:Static res:Resources.mw_menu_File}">
+                <MenuItem Name="menuItemImportServers" Header="{x:Static res:Resources.mw_menu_ImportServers}" Click="menuItemImportServers_Click" />
+                <MenuItem Name="menuItemExit" Header="{x:Static res:Resources.mw_menu_Exit}" Click="menuItemExit_Click" />
+            </MenuItem>
+            <MenuItem Name="menuItemEdit" Header="{x:Static res:Resources.mw_menu_Edit}">
+                <MenuItem Name="menuItemAddServer" Header="{x:Static res:Resources.mw_menu_AddServer}">
+                    <MenuItem Name="menuItemAddGoldSourceServer" Header="{x:Static res:Resources.mw_menu_AddGoldSourceServer}" Click="menuItemAddGoldSourceServer_Click" />
+                    <MenuItem Name="menuItemAddSourceServer" Header="{x:Static res:Resources.mw_menu_AddSourceServer}" Click="menuItemAddSourceServer_Click" />
+                    <MenuItem Name="menuItemAddHltvServer" Header="{x:Static res:Resources.mw_menu_AddHltvServer}" Click="menuItemAddHltvServer_Click" />
+                </MenuItem>
+                <MenuItem Name="menuItemRemoveServer" Header="{x:Static res:Resources.mw_menu_RemoveServer}" Click="menuItemRemoveServer_Click" />
+                <MenuItem Name="menuItemServerProperties" Header="{x:Static res:Resources.mw_menu_ServerProperties}" Click="menuItemServerProperties_Click" />
+            </MenuItem>
+            <MenuItem Name="menuItemOptions" Header="{x:Static res:Resources.mw_menu_Options}" Click="menuItemOptions_Click" />
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid Margin="6,7,0,6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="140*" MinHeight="60" />
+                    <RowDefinition Height="378*" MinHeight="40" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <DataGrid AutoGenerateColumns="False" Margin="7,8,11,10" Name="dataGridServersList" IsSynchronizedWithCurrentItem="True" HeadersVisibility="Column" MouseRightButtonUp="dataGridServersList_MouseRightButtonUp" MouseDoubleClick="dataGridServersList_MouseDoubleClick">
+                    <DataGrid.Columns>
+                        <DataGridCheckBoxColumn Header="{x:Static res:Resources.mw_dgsl_Status}" Binding="{Binding Path=ServerStatus.Status, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridCheckBoxColumn Header="{x:Static res:Resources.mw_dgsl_Active}" Binding="{Binding Path=Options.ActiveServer, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridCheckBoxColumn Header="{x:Static res:Resources.mw_dgsl_AutoRestart}" Binding="{Binding Path=Options.AutoRestart, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn Header="{x:Static res:Resources.mw_dgsl_ServerName}" Binding="{Binding Path=Options.HostName, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn Header="{x:Static res:Resources.mw_dgsl_CurrentMap}" Binding="{Binding Path=ServerStatus.Map, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn Header="{x:Static res:Resources.mw_dgsl_Players}" Binding="{Binding Path=ServerStatus.OnlineToMaxPlayers, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn Header="{x:Static res:Resources.mw_dgsl_Fps}" Binding="{Binding Path=ServerStatus.Fps, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn Header="{x:Static res:Resources.mw_dgsl_Crashes}" Binding="{Binding Path=Statistics.Crashes.Count, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn Header="{x:Static res:Resources.mw_dgsl_CmdArguments}" Binding="{Binding Mode=OneWay, Converter={StaticResource MethodToValueConverterRes}, ConverterParameter='Options.CommandLine'}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <GridSplitter Name="gridSplitter1" ResizeDirection="Rows" ResizeBehavior="PreviousAndCurrent" Grid.Row="1" Height="3" Width="350" VerticalAlignment="Top" HorizontalAlignment="Stretch" />
+
+                <TabControl Margin="7,14,11,35" Name="tabControlServersLogs" Grid.Row="1">
+                    <TabItem Header="{x:Static res:Resources.mw_tcsl_MainLog}" Name="tabPageMain" Visibility="Visible">
+                        <Grid>
+                            <RichTextBox Paragraph.LineHeight="0.1" Name="richTextBoxLog" AutoWordSelection="False" IsReadOnly="True" VerticalScrollBarVisibility="Auto" IsUndoEnabled="False" UndoLimit="0" />
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+
+                <!--<ComboBox Margin="12,0,313,12" Name="comboBoxConsoleCommand" Height="23" VerticalAlignment="Bottom" IsEditable="True" StaysOpenOnEdit="True" PreviewKeyDown="comboBoxConsoleCommand_PreviewKeyDown" />-->
+                <toolkitInput:AutoCompleteBox Margin="7,0,110,6" VerticalAlignment="Bottom" Name="autoCompleteBoxConsoleCommand"
+                                              IsTextCompletionEnabled="True" FilterMode="StartsWith" PreviewKeyDown="autoCompleteBoxConsoleCommand_PreviewKeyDown"
+                                              MaxDropDownHeight="100" Grid.Row="1" />
+                <!--<TextBox Margin="12,0,313,12" Name="textBoxConsoleCommand" Height="23" VerticalAlignment="Bottom" PreviewKeyDown="textBoxConsoleCommand_PreviewKeyDown" />-->
+                <Button Content="{x:Static res:Resources.mw_SendConsoleCommand}" Margin="0,0,11,6" Name="buttonSendConsoleCommand"
+                        Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="93" Click="buttonSendConsoleCommand_Click"
+                        Grid.Row="1" />
+                
+                <Expander Margin="0,8,8,6" Name="expanderOperations" ExpandDirection="Left" IsExpanded="True" Expanded="expanderOperations_Expanded" Collapsed="expanderOperations_Collapsed" HorizontalAlignment="Right" Width="200" Grid.Column="1" Grid.RowSpan="2">
+                    <Grid>
+                        <GroupBox Margin="6,0,0,0" Header="{x:Static res:Resources.mw_gb_Actions}" Height="260" VerticalAlignment="Top" HorizontalAlignment="Left" Width="165">
+                            <Grid>
+                                <Button Content="{x:Static res:Resources.mw_StartSelectedServer}" Height="23" Margin="7,6,0,0" Name="buttonStart" VerticalAlignment="Top" HorizontalAlignment="Left" Width="140" Click="buttonStart_Click" />
+                                <Button Content="{x:Static res:Resources.mw_StopSelectedServer}" Height="23" Name="buttonStop" Width="141" Click="buttonStop_Click" Margin="6,35,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+                                <TextBlock Height="35" HorizontalAlignment="Left" Margin="7,64,0,0" Text="{x:Static res:Resources.mw_lbl_IntervalBetweenStarts}" VerticalAlignment="Top" TextWrapping="Wrap" Width="140" />
+                                <extToolkit:IntegerUpDown HorizontalAlignment="Left" Margin="7,104,0,0" Name="integerUpDownStartInterval" VerticalAlignment="Top" Width="140" Value="3" Minimum="0" ValueChanged="integerUpDownStartInterval_ValueChanged" />
+                                <Button Content="{x:Static res:Resources.mw_StartAllServers}" Height="23" HorizontalAlignment="Left" Margin="6,134,0,0" Name="buttonStartAll" VerticalAlignment="Top" Width="141" Click="buttonStartAll_Click" />
+                                <Button Content="{x:Static res:Resources.mw_StopAllServers}" Height="23" HorizontalAlignment="Left" Margin="7,163,0,0" Name="buttonStopAll" VerticalAlignment="Top" Width="140" Click="buttonStopAll_Click" />
+                                <ProgressBar Height="10" HorizontalAlignment="Left" Margin="7,192,0,0" Name="progressBarStartStopOperation" VerticalAlignment="Top" Width="140" />
+                                <Button Content="{x:Static res:Resources.mw_CancelOperation}" Height="23" HorizontalAlignment="Left" Margin="7,208,0,0" Name="buttonCancelOperation" VerticalAlignment="Top" Width="140" Click="buttonCancelOperation_Click" IsEnabled="False" />
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Margin="6,272,0,0" Header="{x:Static res:Resources.mw_gb_TimerInterval}" HorizontalAlignment="Left" Width="165" Height="176" VerticalAlignment="Top">
+                            <Grid>
+                                <TextBox Height="23" HorizontalAlignment="Left" Margin="71,6,0,0" Name="textBoxTimerMin" VerticalAlignment="Top" Width="76" IsReadOnly="True" />
+                                <TextBox Height="23" HorizontalAlignment="Left" Margin="71,35,0,0" Name="textBoxTimeMax" VerticalAlignment="Top" Width="76" IsReadOnly="True" />
+                                <TextBox Height="23" HorizontalAlignment="Left" Margin="71,64,0,0" Name="textBoxTimerActual" VerticalAlignment="Top" Width="76" PreviewTextInput="textBoxTimerActual_PreviewTextInput" />
+                                <Button Content="{x:Static res:Resources.mw_TimerIntervalMin}" Height="23" HorizontalAlignment="Left" Margin="7,5,0,0" Name="buttonMinTimer" VerticalAlignment="Top" Width="58" Click="buttonMinTimer_Click" />
+                                <Button Content="{x:Static res:Resources.mw_TimerIntervalMax}" Height="23" HorizontalAlignment="Left" Margin="7,34,0,0" Name="buttonMaxTimer" VerticalAlignment="Top" Width="58" Click="buttonMaxTimer_Click" />
+                                <!--<Label Content="{x:Static res:Resources.mw_TimerIntervalMin}" Height="23" HorizontalAlignment="Left" Margin="5,4,0,0" Name="labelTimerMin" VerticalAlignment="Top" />
+                        <Label Content="{x:Static res:Resources.mw_TimerIntervalMax}" Height="23" HorizontalAlignment="Left" Margin="5,33,0,0" Name="labelTimerMax" VerticalAlignment="Top" />-->
+                                <Label Content="{x:Static res:Resources.mw_TimerIntervalActual}" Height="23" HorizontalAlignment="Left" Margin="5,62,0,0" Name="labelTimerActual" VerticalAlignment="Top" />
+                                <Button Content="{x:Static res:Resources.mw_TimerIntervalSetTimer}" Height="23" HorizontalAlignment="Left" Margin="7,93,0,0" Name="buttonSetTimer" VerticalAlignment="Top" Width="140" Click="buttonSetTimer_Click" />
+                                <Button Content="{x:Static res:Resources.mw_TimerIntervalRefreshTimer}" Height="23" HorizontalAlignment="Left" Margin="7,122,0,0" Name="buttonRefreshTimer" VerticalAlignment="Top" Width="140" Click="buttonRefreshTimer_Click" />
+
+                            </Grid>
+                        </GroupBox>
+                        <Button Content="and1gaming.org.ua" Height="23" HorizontalAlignment="Left" Margin="12,458,0,0" Name="buttonSiteLink" VerticalAlignment="Top" FontSize="18" Click="buttonSiteLink_Click">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <TextBlock TextDecorations="Underline">
+                                <ContentPresenter />
+                                    </TextBlock>
+                                </ControlTemplate>
+                            </Button.Template>
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Foreground" Value="Blue" />
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="true">
+                                            <Setter Property="Foreground" Value="Red" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </Grid>
+                </Expander>
+            </Grid>
+        </Grid>
+        <DockPanel Grid.Row="2">
+            <StatusBar>
+                <StatusBarItem DockPanel.Dock="Right">
+                    <TextBlock Name="textBlockUpdateStatus" Text="" Margin="0,0,5,0" />
+                </StatusBarItem>
+                <Separator DockPanel.Dock="Right" Height="8" Background="Gray" />
+                <StatusBarItem DockPanel.Dock="Right">
+                    <TextBlock Name="textBlockStatus" Text="" Margin="0,0,5,0" />
+                </StatusBarItem>
+                <StatusBarItem>
+                    <TextBlock Name="textBlockPlayersCount" Text="" />
+                </StatusBarItem>
+            </StatusBar>
+        </DockPanel>
+    </Grid>
+</Window>
